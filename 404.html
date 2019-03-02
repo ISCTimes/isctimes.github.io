@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>ISC Times</title>
+
+		<link rel="icon" href="favicon.ico">
+		<link rel="stylesheet" href="styles.css">
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	</head>
+	<body>
+		<h1 style="display: block; text-align: center; font-size: 48px;">This page doesn't exist!</h1>
+		<img style="position: fixed; left: 50%; transform: translate(-50%, 50px);"
+			src="https://media.tenor.com/images/cd10bb62ab51f0b8d3c197f628788239/tenor.gif"/>
+		<noscript>
+			<a style="display: block; text-align: center; font-size: 24px; text-decoration: none"
+	 			href="index.html">Click here to redirect to home page.</a>
+		</noscript>
+		<script>
+			let div = document.createElement("div");
+			div.style.display = "block";
+			div.style.textAlign = "center";
+			div.style.fontSize = "28px";
+			div.style.color = "purple";
+			div.appendChild(document.createTextNode("Redirecting to home page..."));
+			document.body.appendChild(div);
+			setTimeout(function()
+			{
+				window.location.replace("https://isctimes.github.io");
+			}, 2000);
+		</script>
+
+	</body>
+</html>
