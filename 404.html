@@ -19,18 +19,29 @@
 	 			href="index.html">Click here to redirect to home page.</a>
 		</noscript>
 		<script>
-			let div = document.createElement("div");
-			div.style.display = "block";
-			div.style.textAlign = "center";
-			div.style.fontSize = "28px";
-			div.style.color = "purple";
-			div.appendChild(document.createTextNode("Redirecting to home page..."));
-			document.body.appendChild(div);
-			setTimeout(function()
+			let url = document.location.toString();
+			let urlStartsWith = "https://isctimes.github.io/Article.html?id=";
+			if (url.startsWith(urlStartsWith) && url.substring(urlStartsWith.length).length > 0)
 			{
-				window.location.replace("https://isctimes.github.io");
-			}, 2000);
+				let articleId = url.substring(urlStartsWith.length);
+				document.body.innerHTML = "";
+				document.write("Here's your article :)<br>");
+				document.write(articleId);
+			}
+			else
+			{
+				let div = document.createElement("div");
+				div.style.display = "block";
+				div.style.textAlign = "center";
+				div.style.fontSize = "28px";
+				div.style.color = "purple";
+				div.appendChild(document.createTextNode("Redirecting to home page..."));
+				document.body.appendChild(div);
+				setTimeout(function()
+				{
+					window.location.replace("https://isctimes.github.io");
+				}, 2000);
+			}
 		</script>
-
 	</body>
 </html>
