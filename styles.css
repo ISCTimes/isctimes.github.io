@@ -60,7 +60,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px 5px 10px 5px;
-	width: 80%;
+	width: 70%;
 }
 
 .panel .title {
@@ -89,7 +89,11 @@ body {
 }
 
 .article-panel .article .image {
+	background: #ffffff;
 	display: block;
+	height: 80%;
+	margin-bottom: 10px;
+	width: 100%;
 }
 .article-panel .article .image img {
 	height: 100%;
@@ -97,12 +101,34 @@ body {
 	width: 100%;
 }
 
+.article-panel .article .button {
+	background: #ffffff;
+	border: #000;
+	border-style: solid;
+	border-radius: 20px;
+	border-width: thin;
+	color: #000;
+	display: block;
+	font-size: 16px;
+	margin: auto;
+	max-width: 100px;
+	min-height: 22px;
+	padding: 6px 0 4px 0;
+	text-align: center;
+	text-decoration: none;
+}
+
+.article-panel .article .button:hover {
+	background: #ececec;
+}
+
+
 .article-panel .article .headline {
 	display: block;
 	height: auto;
 	font-size: larger;
 	font-weight: bold;
-	margin-top: auto;
+	margin: 10px 0 10px;
 	text-align: center;
 }
 
