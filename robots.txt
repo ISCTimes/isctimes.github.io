@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /404.html
-Disallow: /WeAreSafeDoUseJavascriptHereSmileyFace.html.html
-Disallow: /googled45afc90fa5adb1c.html
+Disallow: /
+Allow: /index.html
